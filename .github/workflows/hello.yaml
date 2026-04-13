@@ -1,3 +1,16 @@
+# name: My first WorkFlow
+# on: push
+
+# jobs:
+#   say-hello:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Print message
+#         run: echo "Hello, Github Action!"
+
+
+
 name: My first WorkFlow
 on: push
 
@@ -6,5 +19,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print message
-        run: echo "Hello, Github Action!"
+      - name: Print my name
+        run: echo "Hello, Shubham!"
