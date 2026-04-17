@@ -20,4 +20,6 @@ jobs:
 
     steps:
       - name: Print my name
-        run: echo "Hello, Shubham!"
+        run: |
+          echo "Hello, Shubham!"
+          echo "shubham"
