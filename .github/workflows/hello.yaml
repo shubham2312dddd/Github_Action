@@ -23,3 +23,13 @@ jobs:
         run: |
           echo "Hello, Shubham!"
           echo "shubham"
+
+
+  say-bye:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print by message
+        run: |
+          echo "bye, Shubham!"
+          echo "shubham"
