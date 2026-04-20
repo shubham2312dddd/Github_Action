@@ -10,28 +10,26 @@
 #         run: echo "Hello, Github Action!"
 
 
+name: My first Workflow
 
-name: My first WorkFlow
 on:
- push:
- pull_request:
+push:
+pull_request:
 
 jobs:
-  say-hello:
-    runs-on: ubuntu-latest
+say-hello:
+runs-on: ubuntu-latest
+steps:
+- name: Print my name
+run: |
+echo "Hello, Shubham!"
+echo "shubham"
 
-    steps:
-      - name: Print my name
-        run: |
-          echo "Hello, Shubham!"
-          echo "shubham"
-
-
-  say-bye:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Print by message
-        run: |
-          echo "bye, Shubham!"
-          echo "shubham"
+say-bye:
+runs-on: ubuntu-latest
+needs: say-hello
+steps:
+- name: Print bye message
+run: |
+echo "Bye, Shubham!"
+echo "shubham"
