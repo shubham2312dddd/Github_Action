@@ -83,7 +83,7 @@
 
 
 
-me: Uses action
+name: Uses action
 
 on:
   push:
