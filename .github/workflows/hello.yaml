@@ -109,9 +109,9 @@ jobs:
         run: ls
 
 
-      - name:download dependencies
+      - name : download dependencies
         run: npm install
         
 
-      - name:run tests
+      - name : run tests
         run: npm run test
