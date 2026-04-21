@@ -115,3 +115,10 @@ jobs:
 
       - name : run tests
         run: npm run test
+  
+  depoly:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: check karo
+        run: echo "depoly successful"
